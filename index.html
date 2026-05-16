@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
   </head>
@@ -36,7 +37,41 @@
       </div>
     </section>
 
-    <script src="script.js"></script>
+    <section class="gallery">
+      <h2>My Projects</h2>
+      <p>কিছু কাজের নমুনা</p>
+
+      <div class="gallery-grid">
+        <div class="gallery-item" onclick="openImg(this)">
+          <img src="https://picsum.photos/400/300?random=1" alt="Project 1">
+          <div class="overlay">
+            <h3>Project 1</h3>
+            <p>Portfolio Website</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" onclick="openImg(this)">
+          <img src="https://picsum.photos/400/300?random=2" alt="Project 2">
+          <div class="overlay">
+            <h3>Project 2</h3>
+            <p>Calculator App</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" onclick="openImg(this)">
+          <img src="https://picsum.photos/400/300?random=3" alt="Project 3">
+          <div class="overlay">
+            <h3>Project 3</h3>
+            <p>Responsive Website</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="lightbox" onclick="closeImg()">
+      <img id="lightbox-img" src="">
+    </div>
+
     <section class="contact">
       <h2>Contact Me</h2>
       <p>Have a project? Let's talk!</p>
@@ -52,7 +87,5 @@
     </section>
 
     <script src="script.js"></script>
-  </body>
-</html>
   </body>
 </html>

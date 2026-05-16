@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0a0a0a;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #111;
+}
+
+.logo {
+  color: #f0a500;
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+nav ul a:hover {
+  color: #f0a500;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 60px;
+  animation: fadeDown 1s ease;
+}
+
+.hero h1 span {
+  color: #f0a500;
+}
+
+.hero p {
+  font-size: 22px;
+  color: lightgray;
+  margin: 20px 0;
+  animation: fadeUp 1s ease;
+}
+
+.hero button {
+  padding: 15px 40px;
+  font-size: 18px;
+  background-color: #f0a500;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  animation: fadeUp 1.5s ease;
+}
+
+.hero button:hover {
+  background-color: white;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #111;
+  padding: 30px;
+  border-radius: 15px;
+  width: 250px;
+  text-align: center;
+  border: 1px solid #222;
+  animation: fadeUp 1s ease;
+}
+
+.card:hover {
+  border-color: #f0a500;
+  transform: translateY(-10px);
+  transition: 0.3s;
+}
+
+.card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #f0a500;
+}
+
+/* ANIMATIONS */
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

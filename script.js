@@ -51,3 +51,10 @@ function openImg(el) {
 function closeImg() {
   document.getElementById("lightbox").style.display = "none";
 }
+// Progress Bar Animation
+window.addEventListener("load", () => {
+  document.querySelectorAll(".skill-fill").forEach(bar => {
+    const width = bar.getAttribute("data-width");
+    bar.style.width = width + "%";
+  });
+});

@@ -258,4 +258,49 @@ nav ul a:hover {
   justify-content: center;
   align-items: center;
   z-index: 1000;
-  cursor:
+  cursor:pointer;
+}
+/* SKILLS */
+.skills-section {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #111;
+}
+.skills-section h2 {
+  font-size: 40px;
+  color: #f0a500;
+  margin-bottom: 10px;
+}
+
+.skills-section p {
+  color: lightgray;
+  margin-bottom: 40px;
+}
+
+.skill {
+  max-width: 600px;
+  margin: 0 auto 25px;
+}
+
+.skill-name {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: white;
+}
+
+.skill-bar {
+  background-color: #222;
+  border-radius: 10px;
+  height: 12px;
+  overflow: hidden;
+}
+
+.skill-fill {
+  height: 100%;
+  width: 0%;
+  background-color: #f0a500;
+  border-radius: 10px;
+  transition: width 1.5s ease;
+}

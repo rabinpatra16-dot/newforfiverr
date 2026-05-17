@@ -58,3 +58,12 @@ window.addEventListener("load", () => {
     bar.style.width = width + "%";
   });
 });
+function toggleTheme() {
+  document.body.classList.toggle("light-mode");
+  const btn = document.getElementById("themeBtn");
+  if (document.body.classList.contains("light-mode")) {
+    btn.innerHTML = "☀️ Light";
+  } else {
+    btn.innerHTML = "🌙 Dark";
+  }
+}
